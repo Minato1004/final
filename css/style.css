@@ -118,12 +118,25 @@ ul.login li:hover > a {
 /* 商品輪播 */
 
 
+
 /* 最新消息 */
+ul.news a{
+   font-size: 16px;
+   background-color: #fff;
+   color: rgb(0, 0, 0);
+   text-decoration:none;
+}
+ul.login a:hover { 
+    background-color:rgb(255, 245, 185);
+    color: rgb(0, 0, 0);
+}
+ul.login li:hover > a { 
+    background-color:rgb(255, 245, 185);
+}
 
 
 /* footer */
 footer{
-    text-align: center;
     background-color:rgb(255, 245, 185);
     padding: 40px 0 40px 0;
-  }
+}
