@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>常見問題</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .question-content{
+            margin:0px auto;
+            width: 80%;
+            text-align: center;
+            border:1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            margin-bottom: 20px;
+            line-height: 20px;
+            padding:10px 40px 10px 10px;
+            cursor: pointer;
+        }
+        .question-content.active .answer{
+            display: block;
+        }
+        .question-content.active .icon-arrow{
+            transform: rotate(180deg);
+        }
+        .answer{
+            display: none;
+            font-size: 16px;
+        }
+        .question{
+            position: relative;
+        }
+        .icon-arrow{
+            transition: transform .3s;
+            position: absolute;
+            width: 30px;
+            line-height: 40px;
+            text-align: center;
+            right:-35px;
+            top:-5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- LOGO -->
+<body>
+    <div>
+    <h1 class="logo">
+      <a href="index.html">logo</a>
+    </h1>
+    </div>  
+  </body>
+
+
+<!-- 右上小選單 -->
+<ul class="login">
+<a href="#" target="_blank" style="float: right; font-size: 18px;">購物車</a>
+<a href="login.html" target="_blank" style="float: right; font-size: 18px;">登入</a> 
+</ul> 
+
+<br>     
+<br>
+<br>           
+<!-- 商品分類選單  -->
+<ul class="drop-down-menu">
+<li><a href="about-us.html">關於我們</a>
+  <li><a href="#">商品分類</a>
+      <ul>         
+          <li><a href="#">Midori</a>
+          </li>
+          <li><a href="#">古川紙工</a>
+          </li>
+          <li><a href="#">PILOT</a>
+          </li>
+          <li><a href="#">ZEBRA</a>
+          </li>
+          <li><a href="#">uni</a>
+          <li><a href="#">手帳</a>
+          </li>
+          <li><a href="#">紙製品</a>
+          </li>
+          <li><a href="#">印章</a>
+          </li>
+          <li><a href="#">紙膠帶</a>
+          </li>
+          <li><a href="#">筆類</a>
+          </li>
+      </ul>
+      </li>
+<li><a href="faq.html">常見問題</a>
+<li><a href="#">網路店鋪</a> 
+</ul>
+
+<br>
+<br>
+<div class="breadcrumb">
+<a href="index.html">首頁</a><span>></span><a href="faq.html">常見問題</a></div>
+<br>
+<br>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- .question-content*5>.question{q$$}>.icon-arrow^.answer{a$$} -->
+        
+        <div class="question-content">
+            <div class="question">
+              <h2>付款方式</h2>
+                <div class="icon-arrow"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="answer">
+              <p>▶四大超商取貨付款</p>
+              <p>貨到後前往門市繳費取貨。（部分預購訂單無法使用）。</p>
+              <br>
+              <p>▶超商代碼繳費  *需額外附加費用 (＋$30)</p>
+              <p>提供四大超商(7-11、全家、OK、萊爾富)代碼繳費，持繳費代碼至超商多媒體機台列印繳費單，</p>
+              <p>繳費期限為3天，超過有效期限代碼自動失效，訂單也視同取消。</p>
+              <br>
+              <p>▶線上信用卡（一次付清）</p>
+              <p>支援VISA/MasterCard/JCB。</p>
+          </div>
+        </div>
+    </div>
+    <div class="question-content">
+        <div class="question">
+            <h2>購買商品須知</h2>
+            <div class="icon-arrow"><i class="fa-solid fa-angle-down"></i></div>
+        </div>
+        <div class="answer">
+          <p>我們的庫存現貨約1-2個工作天出貨。</p>
+          <p>商品加入購物車但尚未結帳前，不代表已購得，無法保留商品庫存。</p>
+          <p>點選「前往結帳」後，若於付款途中跳出視窗以致失敗，請待上班日由客服人員個別處理。</p>
+        </div>
+    </div>
+        <div class="question-content">
+            <div class="question">
+                <h2>運送服務</h2>
+                <div class="icon-arrow"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="answer">
+              <p>▶四大超商取貨</p>
+              <p>出貨及包裹到達門市，系統皆自動發送email至信箱，需於指定時間內前往門市取件，</p>
+              <p>運費依各超商規定之運費。單筆訂單滿新台幣800元以上，即可享該次台灣國內免運費優惠。</p>
+              <br>
+              <p>▶國內宅配</p>
+              <p>視材積大小以「中華郵政」或「黑貓宅配」寄送，統一運費每筆訂單60元，</p>
+              <p>單筆訂單滿新台幣800元以上，即可享該次台灣國內免運費優惠。</p>
+              <p>超商取貨服務範圍限台灣本島，離島地區請選用「國內宅配」。</p>
+            </div>
+        </div>
+        <div class="question-content">
+            <div class="question">
+                <h2>售後服務</h2>
+                <div class="icon-arrow"><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+            <div class="answer">
+                <p>▶退換貨</p>
+                <p>網路商店提供7天鑑賞期，若要辦理退換貨，請您來信 minatoxx@gmail.com ，</p>
+                <p>信件主旨「提出退貨需求」在郵件中告知您的「姓名/訂單編號/聯絡電話/退換貨品名/退換貨原因」等資訊，</p>
+                <p>請務必於收到商品7天內連絡客服人員並將商品連同訂單贈品寄回，我們於收到商品後立即為您辦理。</p>
+                <br>
+                <p>▶退換貨需知</p>
+                <p>商品退換貨須在收到商品後7天內通知並寄回，逾期恕不受理。</p>
+                <p>辦理退換貨時，某些情況可能會被認定為已逾越檢查商品之必要程度，而將影響您退貨權利的行使或需負擔毀壞之費用。</p>
+                <p>1.您所退回的商品必須保持該次訂單的完整性，若原廠包裝或商品損毀，損壞費用將於退款中扣抵。</p>
+                <p>2.除瑕疵品外，其他原因退換貨請自行支付往來運費。本公司以訂單寄送地址為主，如修改資料等影響運費不同，請理解額外之費用需自行負擔。</p>
+                <p>3.消耗性商品請勿拆封試用（例如：紙膠帶等），試用後將影響您退貨權利的行使或需負擔毀壞之費用。</p>
+                <p>4.於網站商店購買的商品，無法直接於實體店辦理退換貨。</p>
+                <p>5.在收到您退回的產品和折讓證明單後，我們將立即處理您的退款。信用卡退款將在收到退貨包裹和折讓證明單後聯繫您的發卡銀行進行退刷。</p>
+                <p>6.付款方式為「超商取貨付現」的訂單，將直接將帳戶餘額匯款到您指定的銀行。一般作業時間需約7-30個工作天。</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- jquery主程式 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $('.question-content').on('click', function(){
+            $(this).toggleClass('active')
+            $(this).siblings().removeClass('active')
+
+        })//.question-content end
+        
+    </script>
+    
+    <!-- footer -->
+<footer id="footer_">
+  <p>Copyright©Minato </p>
+  <p>本網站只供學習使用，不用於商業用途。</p>   
+        
+    <nav>		
+      <ul>
+              <a href="#"><img src="https://upload.cc/i1/2022/06/27/ERJnXS.png"alt="ig" 
+              width="60px"height="60px"><a href="#"><img src="https://upload.cc/i1/2022/06/27/QwCj0q.png"alt="twitter" 
+              width="65px"height="60px">
+      </ul>        
+    </nav>
+         
+  </footer>  
+</body>
+</html>
