@@ -32,7 +32,7 @@ ul{
   margin: 0px;
   padding: 0%;
   list-style-type: none;  
-  text-align: center;    
+  text-align: center;  
 }
 
 ul.drop-down-menu {
@@ -69,8 +69,7 @@ ul.drop-down-menu a:hover {
     color: rgb(0, 0, 0);
 }
 ul.drop-down-menu li:hover > a { 
-    background-color:rgb(255, 245, 185);
-
+    background-color:rgb(255, 245, 185)
 }
 
 ul.drop-down-menu ul {
@@ -169,6 +168,18 @@ form input {
     border: none;
 }
 
+.login- a {
+   color: #000000;   
+}
+
+.login- a:hover { 
+    background-color:rgb(255, 245, 185);
+    color: rgb(0, 0, 0);
+}
+.login- li:hover > a { 
+    background-color:rgb(255, 245, 185);
+}
+
 
 /* 最新消息 */
 .container{
@@ -184,19 +195,48 @@ form input {
     padding: 10px;
     text-decoration:underline
 }
+  
+/* 商品品牌選單  */
 
+  
 /* 最新商品  */
 .row {
     display: flex;
     flex-wrap: wrap;
     /*換行*/
   }
-  
-  .col-4 {
+
+  .col-3 {
     width: calc(100% / 3 - 30px);
-    margin: 0px 15px 25px 15px;
+    margin: 0px 15px 40px 15px;
     /*上右下左*/
   }
+
+
+
+
+/* 品牌選單 */
+  .btn-primary {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 110px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #000;
+    background-color: #faf6ad;
+    transition: all 0.3s linear;
+    text-decoration:none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000;
+    color: #fff;
+  }
+ 
 
 /* footer */
 .wrapper{
