@@ -203,25 +203,30 @@ text-decoration:none;
 .row {
     display: flex;
     flex-wrap: wrap;
+    direction: rtl;
     /*換行*/
   }
 
 .col-3 {
     width: calc(100% / 3 - 30px);
     margin: 0px 15px 40px 15px; /*上右下左*/
-    opacity: 0.4;    
+    opacity:0.4;    
   }
 
 .col-3:hover{
- opacity: 1;
+ opacity:1;
 }
 
 .col-4 {
-    width: calc(100% / 3 - 30px);
-    margin: 0px 15px 40px 15px;
-    /*上右下左*/
-  }
- 
+    width: calc(50% / 2 - 40px);
+    margin: 0px 10px 40px 10px;/*上右下左*/
+    margin-left: 120px;
+    }
+
+ .col-4:hover{
+    transform: scale(0.6);
+ } 
+
 div.container a:hover {
     background-color:rgb(255, 245, 185);
     color: rgb(0, 0, 0);
@@ -237,12 +242,12 @@ div.container li:hover > a {
 
 /* 品牌選單 */
   .btn-primary {
-    width: 150px;
+    width: 100px;
     height: 40px;
     display: block;
     margin-bottom: 30px;
     margin-top: 10px;
-    margin-left: 110px;
+    margin-left: 20px;
     text-align: center;
     cursor: pointer;
     line-height: 40px;
