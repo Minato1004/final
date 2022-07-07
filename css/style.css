@@ -197,6 +197,33 @@ text-decoration:none;
 }
   
 /* 商品品牌選單  */
+.btn-primary {
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 140px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #000;
+    background-color:rgb(255, 245, 185);
+    transition: all 0.3s linear;
+    text-decoration:none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+
+
+.btn-primary:hover {
+background-color: #000;
+color: #fff;
+}
 
   
 /* 最新商品  */
@@ -227,6 +254,20 @@ text-decoration:none;
  .col-4:hover{
     transform: scale(0.6);
  }
+
+ .col-4 a{
+     color: #000;
+ }
+
+.col-4 a:hover {
+    background-color:rgb(255, 245, 185);
+    color: rgb(0, 0, 0);
+}
+
+.col-4 li:hover > a { 
+    background-color:rgb(255, 245, 185);
+}
+    
 
 div.container a:hover {
     background-color:rgb(255, 245, 185);
@@ -260,27 +301,7 @@ div.container li:hover > a {
 
 
 /* 品牌選單 */
-  .btn-primary {
-    width: 100px;
-    height: 40px;
-    display: block;
-    margin-bottom: 20px;
-    margin-top: 25px;
-    margin-left: 140px;
-    text-align: center;
-    cursor: pointer;
-    line-height: 40px;
-    color: #000;
-    background-color:rgb(255, 245, 185);
-    transition: all 0.3s linear;
-    text-decoration:none;
-  }
-  
-  .btn-primary:hover {
-    background-color: #000;
-    color: #fff;
-  }
- 
+
 
 /* footer */
 .wrapper{
