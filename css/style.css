@@ -4,7 +4,64 @@ background-color: rgb(255, 255, 255);
 margin: 0px;
 }
 
+/* 漢堡選單 */
+.mobile-menu {
+    position: relative;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .mobile-menu__line,
+  .mobile-menu::before,
+  .mobile-menu::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #010101;
+  }
+  
+  /* 漢堡選單中間橫槓 */
+  .mobile-menu__line {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* 漢堡選單上面橫槓 */
+  .mobile-menu::before {
+    content: '';
+    top: 0;
+  }
+  
+  /* 漢堡選單下面橫槓 */
+  .mobile-menu::after {
+    content: '';
+    bottom: 0;
+  }
 
+  /* 手機版 */
+  @media (max-width: 768px){}
+    header {
+      position: relative;
+    }
+    .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: 0;
+      /* 先把高度設 0 使選單隱藏 */
+      overflow: hidden;
+      background-color: #fff;
+      text-align: center;
+      z-index: 1;
+    }
+    .open.navbar {
+      /* 偵測到 click 事件才會顯示高度 */
+      height: 100vh;
+    }
+     
 /* LOGO */
 .logo a{
     display: inline-block;   
@@ -151,17 +208,20 @@ form input {
     font-size: 16px;
     cursor: pointer;
     border: none;
+    transition: all 0.3s linear;
+    text-decoration:none;
 }
 
 .login- a {
-   color: #000000;
-   margin: 10px;   
+    color: rgb(0, 0, 0);
+    text-decoration:none;
 }
 
 .login- a:hover { 
     background-color:rgb(255, 245, 185);
     color: rgb(0, 0, 0);
 }
+
 .login- li:hover > a { 
     background-color:rgb(255, 245, 185);
 }
@@ -213,11 +273,10 @@ text-decoration:none;
     text-decoration:none;
   }
   
-  .btn-primary:hover {
+.btn-primary:hover {
     background-color: #000;
     color: #fff;
-  }
-
+}
 
 
 .btn-primary:hover {
