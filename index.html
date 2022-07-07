@@ -10,11 +10,6 @@
 </head>
 <body>
     
-<!-- 漢堡選單 -->
-<!-- <div class="mobile-menu"> -->
-    <!-- <span class="mobile-menu__line"></span> -->
-<!-- </div> -->
-
 
 <!-- LOGO -->
     <body>
@@ -26,6 +21,41 @@
       </body>
 
 
+ <!-- 漢堡選單 -->
+<input id="nav-toggle" type="checkbox">
+<label for="nav-toggle" class="ham">
+  <div class="ham-origin">
+    <div class="ham-bar ham-bar--top"></div>
+    <div class="ham-bar ham-bar--middle"></div>
+    <div class="ham-bar ham-bar--bottom"></div>
+  </div>
+</label>
+
+<nav class="menu">
+  <ul class="menu-list">
+    <li class="menu-item">
+      <a class="menu-link" href="#">關於我們</a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link" href="#">商品分類</a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link" href="#">常見問題</a>
+    </li>
+    <li class="menu-item">
+        <a class="menu-link" href="#">網路店鋪</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#">登入</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="#">購物車</a>
+      </li>
+  </ul>
+</nav>
+
+  
+  
 <br>
 <br>           
 <!-- 商品分類選單  -->
@@ -33,7 +63,7 @@
   <li><a href="about-us.html">關於我們</a>
       <li><a href="#">商品分類</a>
           <ul>         
-              <li><a href="#">MIDORI</a>
+              <li><a href="goods_midori.html">MIDORI</a>
               </li>
               <li><a href="#">古川紙工</a>
               </li>
@@ -50,6 +80,7 @@
   <li><a href="login.html">登入</a>
   <li><a href="#">購物車</a>   
   </ul>
+
 
 <br>
 <br>
@@ -115,7 +146,7 @@
             <img src="https://upload.cc/i1/2022/06/25/5mg3CL.jpeg" alt="">
             <img src="https://upload.cc/i1/2022/07/01/ctgC42.jpeg" alt="">
         </div>
-        <div class="left-arrow"></div>
+        <div class="left-arrow"><</div>
         <div class="right-arrow">></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -187,17 +218,18 @@
     <h2 class ="text-center">最新商品</h2>
     <div class="row">
         <div class="col-3">
-        <img src="https://upload.cc/i1/2022/07/02/WoNxeT.jpeg" alt="" class="img-fluid img-rounded">
+        <a href="goods.html"><img src="https://upload.cc/i1/2022/07/02/WoNxeT.jpeg"alt="" class="img-fluid img-rounded"></a>
         <P class="title text-center"><a href="goods.html">日本 Midori</a></P>
         <p class="date text-center">2022-07-02</p>
     </div>
     <div class="col-3">
-        <img src="https://upload.cc/i1/2022/07/02/wkoCrL.jpeg" alt="" class="img-fluid img-rounded">
+        <a href="goods.html"><img src="https://upload.cc/i1/2022/07/02/wkoCrL.jpeg" alt="" class="img-fluid img-rounded"></a>
+        <img src="" alt="" class="img-fluid img-rounded">
         <P class="title text-center"><a href="goods.html">日本 古川紙工</a></P>
         <p class="date text-center">2022-07-02</p>
     </div>
     <div class="col-3">
-        <img src="https://upload.cc/i1/2022/07/02/JpowNx.jpeg" alt="" class="img-fluid img-rounded">
+        <a href="goods.html"><img src="https://upload.cc/i1/2022/07/02/JpowNx.jpeg" alt="" class="img-fluid img-rounded"></a>
         <P class="title text-center"><a href="goods.html">日本 PILOT</a></P>
         <p class="date text-center">2022-07-02</p>
     </div>
